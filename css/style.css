@@ -195,3 +195,16 @@
   line-height: 18px;
   border-color: 10px solid var(--border-color);
 }
+
+.feedback-form input:hover {
+  border-color: #B4B9BB;
+}
+
+.feedback-form input:focus {
+  border-color: var(--basic-black);
+}
+
+.feedback-form input:invalid {
+  border-color: var(--basic-red-extra);
+  color: var(--basic-red-extra);
+}
