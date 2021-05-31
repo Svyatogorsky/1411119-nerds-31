@@ -146,6 +146,10 @@
   font-weight: bold;
 }
 
+.contacts-adress {
+  font: inherit;
+}
+
 .contacts-adress p {
   font-size: 16px;
   line-height: 18px;
@@ -159,11 +163,11 @@
   list-style: none;
 }
 
-.social-button {
+.social-list-item {
   background-color: #E1E1E1;
 }
 
-.social-button:hover {
+.social-list-item:hover {
   background-color: var(--basic-red-extra);
 }
 
