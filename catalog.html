@@ -32,13 +32,13 @@
     <section class="filters">
       <h2>Фильтры товаров</h2>
       <form class="filter" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Стоимость</legend>
+        <fieldset class="filter-price">
+          <legend>Стоимость:</legend>
           <input class="filter-range" type="range" min="0" max="15000" step="1">
           <p>От <span>0</span> до <span>15 000</span></p>
         </fieldset>
-        <fieldset>
-          <legend>Сетка</legend>
+        <fieldset class="grid">
+          <legend>Сетка:</legend>
           <p class="filter-option filter-radio">
             <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive"
               id="adaptive-filter" checked>
@@ -54,8 +54,8 @@
             <label for="adaptive-filter">Резиновая</label>
           </p>
         </fieldset>
-        <fieldset>
-          <legend>Особенности</legend>
+        <fieldset class="properties">
+          <legend>Особенности:</legend>
           <p class="filter-option filter-checkbox">
             <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider-filter" checked>
             <label for="slider-filter">Слайдер</label>
@@ -99,7 +99,7 @@
           <div>
             <a href="#">Sedona</a>
             <p>Информационный сайт для туристов</p>
-            <button type="button">9 900 ₽</button>
+            <button class="catalog-list-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
@@ -107,7 +107,7 @@
           <div>
             <a href="#">Pink App</a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button type="button">9 900 ₽</button>
+            <button class="catalog-list-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
@@ -115,7 +115,7 @@
           <div>
             <a href="#">Barbershop</a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <button type="button">9 900 ₽</button>
+            <button class="catalog-list-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
@@ -123,7 +123,7 @@
           <div>
             <a href="#">MISHKA</a>
             <p>Интернет-магазин вязаных игрушек</p>
-            <button type="button">9 900 ₽</button>
+            <button class="catalog-list-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
@@ -131,7 +131,7 @@
           <div>
             <a href="#">A Plus</a>
             <p>Лендинг курсов повышения квалификации</p>
-            <button type="button">9 900 ₽</button>
+            <button class="catalog-list-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
@@ -139,7 +139,7 @@
           <div>
             <a href="#">КВАСТ</a>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <button type="button">9 900 ₽</button>
+            <button class="catalog-list-button" type="button">9 900 ₽</button>
           </div>
         </li>
       </ul>

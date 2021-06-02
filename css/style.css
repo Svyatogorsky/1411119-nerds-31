@@ -33,6 +33,7 @@
   --basic-white: #FFFFFF;
   --border-color: #D7DCDE;
   --basic-gray: #E1E1E1;
+  --basic-gray-text: #666666;
 }
 
 .page-body {
@@ -283,4 +284,154 @@
 .feedback-form input:invalid {
   border-color: var(--basic-red-extra);
   color: var(--basic-red-extra);
+}
+
+.catalog-container h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.catalog-container fieldset {
+  border: none;
+}
+
+.filter {
+  color: var(--basic-black-extra);
+}
+
+.catalog-container legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+ .filter-price p {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.grid p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.properties p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorting-list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list a:active,
+.sorting-list a:focus {
+  color: var(--basic-black);
+}
+
+.button-filter {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-light);
+}
+
+.button-filter:hover {
+  background-color: var(--basic-light-neutral);
+}
+
+.button-filter:active {
+  background-color: var(--basic-neutral-dark);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-list a:hover {
+  color: var(--basic-red);
+}
+
+.catalog-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item p {
+  color: var(--basic-gray-text);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.catalog-list-button {
+  color:var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--basic-red);
+}
+
+.catalog-list-button:hover {
+  background-color: var(--basic-red-extra);
+}
+
+.catalog-list-button:active {
+  background-color: var(--basic-red-dark);
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+  background-color: var(--basic-light);
+}
+
+.breadcrumbs a:focus {
+  background-color: var(--basic-white);
+}
+
+.breadcrumbs a:hover {
+  background-color: var(--basic-light-neutral);
+}
+
+.breadcrumbs a:active {
+  color:rgba(0, 0, 0, 0.3);
+  background-color: var(--basic-neutral-dark);
 }
