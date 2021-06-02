@@ -1,13 +1,13 @@
 @font-face {
   font-family: Roboto;
-  src: url(fonts/roboto.woff) format(woff) url(fonts/roboto.woff2) format(woff2);
+  src: url("fonts/roboto.woff") format("woff") url("fonts/roboto.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts/robotobold.woff) format(woff) url(fonts/robotobold.woff2) format(woff2);
+  src: url("fonts/robotobold.woff") format("woff") url("fonts/robotobold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -31,7 +31,7 @@
   --basic-black-extra: #283136;
   --basic-black: #000000;
   --basic-white: #FFFFFF;
-  --border-color: #D7DCDE;
+  --border-input: #D7DCDE;
   --basic-gray: #E1E1E1;
   --basic-gray-text: #666666;
 }
@@ -270,7 +270,7 @@
 .feedback-form textarea {
   font-size: 16px;
   line-height: 18px;
-  border-color: 10px solid var(--border-color);
+  border-color: 10px solid var(--border-input);
 }
 
 .feedback-form input:hover {
