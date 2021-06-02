@@ -1,13 +1,13 @@
 @font-face {
   font-family: Roboto;
-  src: url(fonts\roboto.woff) format(woff) url(fonts\roboto.woff2) format(woff2);
+  src: url(fonts/roboto.woff) format(woff) url(fonts/roboto.woff2) format(woff2);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts\robotobold.woff) format(woff) url(fonts\robotobold.woff2) format(woff2);
+  src: url(fonts/robotobold.woff) format(woff) url(fonts/robotobold.woff2) format(woff2);
   font-weight: 400;
   font-style: normal;
 }
@@ -32,6 +32,7 @@
   --basic-black: #000000;
   --basic-white: #FFFFFF;
   --border-color: #D7DCDE;
+  --basic-gray: #E1E1E1;
 }
 
 .page-body {
@@ -46,18 +47,24 @@
   background-color: var(--basic-white);
 }
 
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
 }
 
+
 .site-navigation {
   list-style: none;
 }
 
+.site-navigation a,
+.basket-link {
+  color: inherit;
+}
+
 .page-body a {
   text-decoration: none;
-  color: #000000;
 }
 
 .header-container {
@@ -71,7 +78,14 @@
 
 .site-navigation a:focus,
 .basket-link:focus {
+  color: var(--basic-black);
   text-decoration: underline;
+}
+
+.site-navigation a:active,
+.basket-link:active {
+  opacity: 0.3;
+  text-decoration: none;
 }
 
 .slide-content {
@@ -82,15 +96,60 @@
 
 .information-button,
 .button {
-  /* color: var(--basic-white); */
+  color: var(--basic-white);
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
+.information-button:active,
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .services-list {
   list-style: none;
+}
+
+.service-button-1,
+.information-button,
+.button {
+  background-color: var(--basic-red);
+}
+
+.service-button-2 {
+  background-color: var(--basic-green);
+}
+
+.service-button-3 {
+  background-color: var(--basic-yellow);
+}
+
+.service-button-1:hover,
+.information-button:hover {
+  background-color: var(--basic-red-extra);
+}
+
+.service-button-2:hover {
+  background-color: var(--basic-green-extra);
+}
+
+.service-button-3:hover {
+  background-color: var(--basic-yellow-extra);
+}
+
+.service-button-1:active,
+.information-button:active {
+  background-color: var(--basic-red-dark);
+}
+
+.service-button-2:active {
+  background-color: var(--basic-green-dark);
+}
+
+.service-button-3:active {
+  background-color: var(--basic-yellow-dark);
 }
 
 .services-name {
@@ -136,6 +195,18 @@
   border-bottom: 2px solid var(--basic-light);
 }
 
+.clients img {
+  opacity: 0.2;
+}
+
+.clients img:hover {
+  opacity: 1;
+}
+
+.clients img:active {
+  opacity: 0.1;
+}
+
 .clients-list {
   list-style: none;
 }
@@ -164,7 +235,7 @@
 }
 
 .social-list-item {
-  background-color: #E1E1E1;
+  background-color: var(--basic-gray);
 }
 
 .social-list-item:hover {

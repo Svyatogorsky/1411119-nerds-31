@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-  </head>
-  <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a class="basket-link" href="#">Корзина</a>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="index.html">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a class="basket-link" href="#">Корзина</a>
+    </nav>
+  </header>
   <main class="catalog-container">
     <h1>Магазин готовых шаблонов</h1>
     <section class="filters">
@@ -35,41 +39,43 @@
         </fieldset>
         <fieldset>
           <legend>Сетка</legend>
-            <p class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive" id="adaptive-filter" checked>
-              <label for="adaptive-filter">Адаптивная</label>
-            </p>
-            <p class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="fixed" id="fixed-filter">
-              <label for="adaptive-filter">Фиксированная</label>
-            </p>
-            <p class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="flex" id="flex-filter">
-              <label for="adaptive-filter">Резиновая</label>
-            </p>
+          <p class="filter-option filter-radio">
+            <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive"
+              id="adaptive-filter" checked>
+            <label for="adaptive-filter">Адаптивная</label>
+          </p>
+          <p class="filter-option filter-radio">
+            <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="fixed"
+              id="fixed-filter">
+            <label for="adaptive-filter">Фиксированная</label>
+          </p>
+          <p class="filter-option filter-radio">
+            <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="flex" id="flex-filter">
+            <label for="adaptive-filter">Резиновая</label>
+          </p>
         </fieldset>
         <fieldset>
           <legend>Особенности</legend>
-            <p class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider-filter" checked>
-              <label for="slider-filter">Слайдер</label>
-            </p>
-            <p class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="features" id="features-filter">
-              <label for="features-filter">Блок преимуществ</label>
-            </p>
-            <p class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="news-filter" checked>
-              <label for="news-filter">Новости</label>
-            </p>
-            <p>
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery" id="gallery-filter">
-              <label for="gallery-filter">Галлерея</label>
-            </p>
-            <p class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="basket-filter">
-              <label for="basket-filter">Корзина</label>
-            </p>
+          <p class="filter-option filter-checkbox">
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider-filter" checked>
+            <label for="slider-filter">Слайдер</label>
+          </p>
+          <p class="filter-option filter-checkbox">
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="features" id="features-filter">
+            <label for="features-filter">Блок преимуществ</label>
+          </p>
+          <p class="filter-option filter-checkbox">
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="news-filter" checked>
+            <label for="news-filter">Новости</label>
+          </p>
+          <p>
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery" id="gallery-filter">
+            <label for="gallery-filter">Галлерея</label>
+          </p>
+          <p class="filter-option filter-checkbox">
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="basket-filter">
+            <label for="basket-filter">Корзина</label>
+          </p>
         </fieldset>
         <button class="button-filter" type="button">Показать</button>
       </form>
@@ -167,22 +173,22 @@
       </address>
       <section class="modal-feedback">
         <h2>Напишите нам</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="name-input">Ваше имя</label>
-          <input id="name-input" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email-input">Ваш email</label>
-          <input id="email-input" type="email" name="email" placeholder="email@example.com ">
-        </p>
-        <p>
-          <label for="comment">Текст письма:</label>
-          <textarea name="comment" id="comment">В свободной форме</textarea>
-        </p>
-        <button class="button button-submit" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="name-input">Ваше имя</label>
+            <input id="name-input" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="email-input">Ваш email</label>
+            <input id="email-input" type="email" name="email" placeholder="email@example.com ">
+          </p>
+          <p>
+            <label for="comment">Текст письма:</label>
+            <textarea name="comment" id="comment">В свободной форме</textarea>
+          </p>
+          <button class="button button-submit" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </section>
     <section class="footer-social">
@@ -199,5 +205,6 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
-  </body>
+</body>
+
 </html>
