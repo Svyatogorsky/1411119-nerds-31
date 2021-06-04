@@ -19,10 +19,10 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
       <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a class="site-navigation-link" href="index.html">Студия</a></li>
+        <li><a class="site-navigation-link" href="#">Клиенты</a></li>
+        <li><a class="site-navigation-link" href="#">Магазин</a></li>
+        <li><a class="site-navigation-link" href="#">Контакты</a></li>
       </ul>
       <a class="basket-link" href="#">Корзина</a>
     </nav>
@@ -31,13 +31,13 @@
     <h1>Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2>Фильтры товаров</h2>
-      <form class="filter" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-price">
+      <form class="filter-form" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-form-group">
           <legend>Стоимость:</legend>
           <input class="filter-range" type="range" min="0" max="15000" step="1">
           <p>От <span>0</span> до <span>15 000</span></p>
         </fieldset>
-        <fieldset class="grid">
+        <fieldset class="filter-form-group grid">
           <legend>Сетка:</legend>
           <p class="filter-option filter-radio">
             <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive"
@@ -47,14 +47,14 @@
           <p class="filter-option filter-radio">
             <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="fixed"
               id="fixed-filter">
-            <label for="adaptive-filter">Фиксированная</label>
+            <label for="fixed-filter">Фиксированная</label>
           </p>
           <p class="filter-option filter-radio">
             <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="flex" id="flex-filter">
-            <label for="adaptive-filter">Резиновая</label>
+            <label for="flex-filter">Резиновая</label>
           </p>
         </fieldset>
-        <fieldset class="properties">
+        <fieldset class="filter-form-group properties">
           <legend>Особенности:</legend>
           <p class="filter-option filter-checkbox">
             <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider-filter" checked>
@@ -84,11 +84,11 @@
       <h2>Сортировка</h2>
       <p>Сортировать:</p>
       <ul class="sorting-list">
-        <li class="sorting-button"><a href="#">По цене</a></li>
-        <li class="sorting-button"><a href="#">По типу</a></li>
-        <li class="sorting-button"><a href="#">По названию</a></li>
-        <li class="sorting-button sorting-button-up"><a href="#">Вниз</a></li>
-        <li class="sorting-button sorting-button-down"><a href="#">Вверх</a></li>
+        <li class="sorting-button"><a class="sorting-link" href="#">По цене</a></li>
+        <li class="sorting-button"><a class="sorting-link" href="#">По типу</a></li>
+        <li class="sorting-button"><a class="sorting-link" href="#">По названию</a></li>
+        <li class="sorting-button sorting-button-up"><a class="sorting-link" href="#">Вниз</a></li>
+        <li class="sorting-button sorting-button-down"><a class="sorting-link" href="#">Вверх</a></li>
       </ul>
     </section>
     <section class="catalog">
@@ -97,64 +97,64 @@
         <li class="catalog-item">
           <img src="img/img-sedona.jpg" width="358" height="578" alt="Товар: Sedona">
           <div>
-            <a href="#">Sedona</a>
+            <a class="catalog-item-link" href="#">Sedona</a>
             <p>Информационный сайт для туристов</p>
-            <button class="catalog-list-button" type="button">9 900 ₽</button>
+            <button class="catalog-item-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-pink.jpg" width="358" height="578" alt="Товар: Pink App">
           <div>
-            <a href="#">Pink App</a>
+            <a class="catalog-item-link" href="#">Pink App</a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button class="catalog-list-button" type="button">9 900 ₽</button>
+            <button class="catalog-item-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Товар: Barbershop">
           <div>
-            <a href="#">Barbershop</a>
+            <a class="catalog-item-link" href="#">Barbershop</a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <button class="catalog-list-button" type="button">9 900 ₽</button>
+            <button class="catalog-item-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-mishka.jpg" width="358" height="578" alt="Товар: MISHKA">
           <div>
-            <a href="#">MISHKA</a>
+            <a class="catalog-item-link" href="#">MISHKA</a>
             <p>Интернет-магазин вязаных игрушек</p>
-            <button class="catalog-list-button" type="button">9 900 ₽</button>
+            <button class="catalog-item-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-aplus.jpg" width="358" height="578" alt="Товар: A Plus">
           <div>
-            <a href="#">A Plus</a>
+            <a class="catalog-item-link" href="#">A Plus</a>
             <p>Лендинг курсов повышения квалификации</p>
-            <button class="catalog-list-button" type="button">9 900 ₽</button>
+            <button class="catalog-item-button" type="button">9 900 ₽</button>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-kvast.jpg" width="358" height="578" alt="Товар: КВАСТ">
           <div>
-            <a href="#">КВАСТ</a>
+            <a class="catalog-item-link" href="#">КВАСТ</a>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <button class="catalog-list-button" type="button">9 900 ₽</button>
+            <button class="catalog-item-button" type="button">9 900 ₽</button>
           </div>
         </li>
       </ul>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-current">
-          <a>1</a>
+          <a class="breadcrumbs-link">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a class="breadcrumbs-link" href="#">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a class="breadcrumbs-link" href="#">3</a>
         </li>
         <li>
-          <a href="#">Следующая</a>
+          <a class="breadcrumbs-link" href="#">Следующая</a>
         </li>
       </ul>
     </section>

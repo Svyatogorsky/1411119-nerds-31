@@ -31,7 +31,7 @@
   --basic-black-extra: #283136;
   --basic-black: #000000;
   --basic-white: #FFFFFF;
-  --border-input: #D7DCDE;
+  --extra-gray: #D7DCDE;
   --basic-gray: #E1E1E1;
   --basic-gray-text: #666666;
 }
@@ -113,43 +113,42 @@
   list-style: none;
 }
 
-.service-button-1,
 .information-button,
 .button {
   background-color: var(--basic-red);
 }
 
-.service-button-2 {
+.button-green {
   background-color: var(--basic-green);
 }
 
-.service-button-3 {
+.button-yellow {
   background-color: var(--basic-yellow);
 }
 
-.service-button-1:hover,
+.button:hover,
 .information-button:hover {
   background-color: var(--basic-red-extra);
 }
 
-.service-button-2:hover {
+.button-green:hover {
   background-color: var(--basic-green-extra);
 }
 
-.service-button-3:hover {
+.button-yellow:hover {
   background-color: var(--basic-yellow-extra);
 }
 
-.service-button-1:active,
+.button:active,
 .information-button:active {
   background-color: var(--basic-red-dark);
 }
 
-.service-button-2:active {
+.button-green:active {
   background-color: var(--basic-green-dark);
 }
 
-.service-button-3:active {
+.button-yellow:active {
   background-color: var(--basic-yellow-dark);
 }
 
@@ -175,19 +174,19 @@
   list-style: none;
 }
 
-.features-table caption {
+.features-table .table-title {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 
-.features-table th {
+.features-table .table-title-cell {
   font-size: 45px;
   line-height: 64px;
   font-weight: bold;
 }
 
-.features-table td {
+.features-table .table-cell-content {
   line-height: 18px;
 }
 
@@ -196,15 +195,15 @@
   border-bottom: 2px solid var(--basic-light);
 }
 
-.clients img {
+.clients .client-logo {
   opacity: 0.2;
 }
 
-.clients img:hover {
+.clients .client-logo:hover {
   opacity: 1;
 }
 
-.clients img:active {
+.clients .client-logo:active {
   opacity: 0.1;
 }
 
@@ -231,7 +230,7 @@
   color: inherit;
 }
 
-.footer-social ul {
+.footer-social .social-list {
   list-style: none;
 }
 
@@ -270,7 +269,7 @@
 .feedback-form textarea {
   font-size: 16px;
   line-height: 18px;
-  border-color: 10px solid var(--border-input);
+  border-color: 10px solid var(--extra-gray);
 }
 
 .feedback-form input:hover {
@@ -301,7 +300,8 @@
   color: var(--basic-black-extra);
 }
 
-.catalog-container legend {
+.catalog-container legend,
+.sorting p {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -314,40 +314,31 @@
   text-transform: uppercase;
 }
 
-.grid p {
-  font-size: 16px;
-  line-height: 20px;
-}
-
+.grid p,
 .properties p {
   font-size: 16px;
   line-height: 20px;
 }
 
+
 .sorting-list {
   list-style: none;
 }
 
-.sorting p {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
-.sorting-list a {
+.sorting-list .sorting-link {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-list a:hover {
+.sorting-list .sorting-link:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-list a:active,
-.sorting-list a:focus {
+.sorting-list .sorting-link:active,
+.sorting-list .sorting-link:focus {
   color: var(--basic-black);
 }
 
@@ -373,7 +364,7 @@
   list-style: none;
 }
 
-.catalog-list a {
+.catalog-list .catalog-item-link {
   color: var(--basic-black);
   font-size: 18px;
   line-height: 30px;
@@ -381,11 +372,11 @@
   text-transform: uppercase;
 }
 
-.catalog-list a:hover {
+.catalog-list .catalog-item-link:hover {
   color: var(--basic-red);
 }
 
-.catalog-list a:active {
+.catalog-list .catalog-item-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -397,7 +388,7 @@
   text-align: center;
 }
 
-.catalog-list-button {
+.catalog-item-button {
   color:var(--basic-white);
   font-size: 16px;
   line-height: 18px;
@@ -406,11 +397,11 @@
   background-color: var(--basic-red);
 }
 
-.catalog-list-button:hover {
+.catalog-item-button:hover {
   background-color: var(--basic-red-extra);
 }
 
-.catalog-list-button:active {
+.catalog-item-button:active {
   background-color: var(--basic-red-dark);
 }
 
@@ -418,20 +409,20 @@
   list-style: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs .breadcrumbs-link {
   color: var(--basic-black);
   background-color: var(--basic-light);
 }
 
-.breadcrumbs a:focus {
+.breadcrumbs .breadcrumbs-link:focus {
   background-color: var(--basic-white);
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs .breadcrumbs-link:hover {
   background-color: var(--basic-light-neutral);
 }
 
-.breadcrumbs a:active {
+.breadcrumbs .breadcrumbs-link:active {
   color:rgba(0, 0, 0, 0.3);
   background-color: var(--basic-neutral-dark);
 }
