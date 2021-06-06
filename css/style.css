@@ -46,12 +46,67 @@
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
+.page {
+  height: 100%;
+}
+
+.main-header-bar {
+  background-color: var(--basic-light);
+}
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.slider {
+  background-color: var(--basic-light);
+  margin-bottom: 80px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services {
+  margin-bottom: 80px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  text-align: left;
 }
 
 .main-header-logo:hover {
@@ -79,18 +134,18 @@
   background-color:var(--basic-light);
 }
 
-.site-navigation a:hover,
+.site-navigation-link:hover,
 .basket-link:hover {
   color: var(--basic-red);
 }
 
-.site-navigation a:focus,
+.site-navigation-link:focus,
 .basket-link:focus {
   color: var(--basic-black);
   text-decoration: underline;
 }
 
-.site-navigation a:active,
+.site-navigation link:active,
 .basket-link:active {
   opacity: 0.3;
   text-decoration: none;
@@ -149,6 +204,7 @@
   background-color: var(--basic-red-dark);
 }
 
+
 .button-green:active {
   background-color: var(--basic-green-dark);
 }
@@ -162,6 +218,12 @@
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 73px;
 }
 
 .features-title {
@@ -195,6 +257,9 @@
 .clients {
   border-top: 2px solid var(--basic-light);
   border-bottom: 2px solid var(--basic-light);
+  display: grid;
+  grid-template-columns: min-content;
+  margin-bottom: 80px;
 }
 
 .clients .client-logo {
@@ -209,6 +274,16 @@
   opacity: 0.1;
 }
 
+.main-footer .container {
+  width: 1260px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.social-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .contacts-name {
   font-size: 18px;
