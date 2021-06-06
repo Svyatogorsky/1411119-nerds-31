@@ -54,15 +54,15 @@
   line-height: 30px;
 }
 
+.main-header-logo:hover {
+  opacity: 0.7;
+}
 
-.site-navigation,
-.features-list,
-.services-list,
-.clients-list,
-.footer-social .social-list,
-.sorting-list,
-.catalog-list,
-.breadcrumbs {
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.list {
   list-style: none;
 }
 
@@ -71,7 +71,7 @@
   color: inherit;
 }
 
-.page-body .link {
+.link {
   text-decoration: none;
 }
 
@@ -261,23 +261,17 @@
   font-weight: bold;
 }
 
-.feedback-form .input-name,
-.modal-feedback .input-email,
-.feedback-form .input-comment {
+.modal-input {
   font-size: 16px;
   line-height: 18px;
   border-color: 10px solid var(--extra-gray);
 }
 
-.feedback-form .input-name:hover,
-.modal-feedback .input-email:hover,
-.feedback-form .input-comment:hover {
+.modal-input:hover {
   border-color: #B4B9BB;
 }
 
-.feedback-form .input-name:focus,
-.modal-feedback .input-email:focus,
-.feedback-form .input-comment:focus {
+.modal-input:focus {
   border-color: var(--basic-black);
 }
 
@@ -301,9 +295,7 @@
   color: var(--basic-black-extra);
 }
 
-.price-title,
-.flex-title,
-.properties-title,
+.filter-group-title,
 .sorting-name {
   font-size: 18px;
   line-height: 30px;
@@ -375,7 +367,7 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item p {
+.catalog-item-content {
   color: var(--basic-gray-text);
   font-size: 16px;
   line-height: 18px;

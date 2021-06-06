@@ -18,7 +18,7 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
-      <ul class="site-navigation">
+      <ul class="site-navigation list">
         <li><a class="site-navigation-link link" href="index.html">Студия</a></li>
         <li><a class="site-navigation-link link" href="#">Клиенты</a></li>
         <li><a class="site-navigation-link link" href="#">Магазин</a></li>
@@ -33,12 +33,12 @@
       <h2 class="filters-title">Фильтры товаров</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-form-group">
-          <legend class="price-title">Стоимость:</legend>
+          <legend class="price-title filter-group-title">Стоимость:</legend>
           <input class="filter-range" type="range" min="0" max="15000" step="1">
           <p class="price-content">От <span>0</span> до <span>15 000</span></p>
         </fieldset>
         <fieldset class="filter-form-group grid">
-          <legend class="flex-title">Сетка:</legend>
+          <legend class="flex-title filter-group-title">Сетка:</legend>
           <p class="filter-option filter-radio">
             <input class="filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive"
               id="adaptive-filter" checked>
@@ -55,7 +55,7 @@
           </p>
         </fieldset>
         <fieldset class="filter-form-group properties">
-          <legend class="properties-title">Особенности:</legend>
+          <legend class="filte-group-title">Особенности:</legend>
           <p class="filter-option filter-checkbox">
             <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider-filter" checked>
             <label for="slider-filter">Слайдер</label>
@@ -83,17 +83,17 @@
     <section class="sorting">
       <h2 class="sorting-title">Сортировка</h2>
       <p class="sorting-name">Сортировать:</p>
-      <ul class="sorting-list">
-        <li class="sorting-button"><a class="sorting-link" href="#">По цене</a></li>
-        <li class="sorting-button"><a class="sorting-link" href="#">По типу</a></li>
-        <li class="sorting-button"><a class="sorting-link" href="#">По названию</a></li>
-        <li class="sorting-button sorting-button-up"><a class="sorting-link" href="#">Вниз</a></li>
-        <li class="sorting-button sorting-button-down"><a class="sorting-link" href="#">Вверх</a></li>
+      <ul class="sorting-list list">
+        <li class="sorting-button"><a class="sorting-link link" href="#">По цене</a></li>
+        <li class="sorting-button"><a class="sorting-link link" href="#">По типу</a></li>
+        <li class="sorting-button"><a class="sorting-link link" href="#">По названию</a></li>
+        <li class="sorting-button sorting-button-up"><a class="sorting-link link" href="#">Вниз</a></li>
+        <li class="sorting-button sorting-button-down"><a class="sorting-link link" href="#">Вверх</a></li>
       </ul>
     </section>
     <section class="catalog">
       <h2 class="catalog-list-title">Список товаров</h2>
-      <ul class="catalog-list">
+      <ul class="catalog-list list">
         <li class="catalog-item">
           <img src="img/img-sedona.jpg" width="358" height="578" alt="Товар: Sedona">
           <div>
@@ -143,7 +143,7 @@
           </div>
         </li>
       </ul>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs list">
         <li class="breadcrumbs-current">
           <a class="breadcrumbs-link link">1</a>
         </li>
@@ -193,7 +193,7 @@
     </section>
     <section class="footer-social">
       <h2 class="social-title">Социальные сети</h2>
-      <ul class="social-list">
+      <ul class="social-list list">
         <li class="social-list-item"><a class="social-list-link link" href="#">Вконтакте</a></li>
         <li class="social-list-item"><a class="social-list-link link" href="#">Фейсбук</a></li>
         <li class="social-list-item"><a class="social-list-link link" href="#">Инстаграм</a></li>
