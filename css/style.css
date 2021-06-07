@@ -56,42 +56,40 @@
   height: 100%;
 }
 
-.main-header-bar {
-  background-color: var(--basic-light);
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  display: grid;
 }
 
 .main-navigation-wrapper {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 160px 1fr min-content;
   width: 1260px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.main-navigation {
-  display: grid;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 1260px;
-  margin: 0 auto;
-  padding: 0 10px;
+.main-header-bar {
+  background-color: var(--basic-light);
 }
 
 .slider {
   background-color: var(--basic-light);
-  margin-bottom: 80px;
-  margin: 0;
-  padding: 0;
+}
+
+.slider-container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+}
+
+.main-container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .services {
@@ -109,11 +107,11 @@
   text-align: left;
 }
 
-.main-header-logo:hover {
+.header-logo:hover {
   opacity: 0.7;
 }
 
-.main-header-logo:active {
+.header-logo:active {
   opacity: 0.3;
 }
 
@@ -223,7 +221,10 @@
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 73px;
+}
+
+.features-header {
+  order: 1;
 }
 
 .features-title {
@@ -257,9 +258,12 @@
 .clients {
   border-top: 2px solid var(--basic-light);
   border-bottom: 2px solid var(--basic-light);
-  display: grid;
-  grid-template-columns: min-content;
   margin-bottom: 80px;
+}
+
+.clients-list {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .clients .client-logo {
@@ -274,21 +278,30 @@
   opacity: 0.1;
 }
 
-.main-footer .container {
-  width: 1260px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.social-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .contacts-name {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+}
+
+.map {
+  width: 100%;
+}
+
+.main-footer-container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer-social-container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts-adress {
