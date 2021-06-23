@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700;display=swap">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
@@ -20,12 +21,12 @@
           <img class="header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
         <ul class="site-navigation list">
-          <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Студия</a></li>
+          <li class="site-navigation-item active"><a class="site-navigation-link link" href="#">Студия</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Клиенты</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link link" href="catalog.html">Магазин</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Контакты</a></li>
         </ul>
-        <div class="user-navigation">
+        <div class="user-navigation active">
           <a class="basket-link link" href="#">Корзина</a>
         </div>
       </div>
@@ -33,7 +34,7 @@
   </header>
   <main class="page-main">
     <section class="slider">
-      <div class="container">
+      <div class="container slider-1">
         <h1 class="hidden">Дизайн студия Нёрдс</h1>
         <div class="slide-1">
           <p class="slide-title">
@@ -43,7 +44,7 @@
             Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
           </p>
         </div>
-        <div class="slide-2">
+        <div class="slide-2 hidden">
           <p class="slide-title">
             Любим математику<br>как никто другой.
           </p>
@@ -51,7 +52,7 @@
             Никакого креатива, только математические формулы<br> для расчета идеальных пропорций
           </p>
         </div>
-        <div class="slide-3">
+        <div class="slide-3 hidden">
           <p class="slide-title">
             Только ночь,<br> только хардкор
           </p>
@@ -59,10 +60,12 @@
             Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.
           </p>
         </div>
-        <a class="information-button" href="#">Узнать больше</a>
-        <button class="slider-button" type="button"></button>
-        <button class="slider-button" type="button"></button>
-        <button class="slider-button" type="button"></button>
+        <a class="information-button button" href="#">Узнать больше</a>
+        <div class="slider-controls">
+          <button class="slider-button active" type="button"></button>
+          <button class="slider-button" type="button"></button>
+          <button class="slider-button" type="button"></button>
+        </div>
       </div>
     </section>
     <div class="container">
@@ -70,19 +73,19 @@
         <h2 class="service-title hidden">Услуги</h2>
         <ul class="services-list list">
           <li class="services-item">
-            <img src="img/service-item-1.jpg" width="300" height="146" alt="Ноутбук">
+            <img class="services-item-image" src="img/service-item-1.jpg" width="300" height="146" alt="Ноутбук">
             <p class="services-name">Веб-сайты</p>
             <p class="services-content">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-red" href="#">Заказать</a>
           </li>
           <li class="services-item">
-            <img src="img/service-item-2.jpg" width="300" height="146" alt="Два смартфона">
+            <img class="services-item-image" src="img/service-item-2.jpg" width="300" height="146" alt="Два смартфона">
             <p class="services-name">Приложения</p>
             <p class="services-content">Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button button-green" href="#">Заказать</a>
           </li>
           <li class="services-item">
-            <img src="img/service-item-3.jpg" width="300" height="146" alt="Презентация графиков">
+            <img class="services-item-image" src="img/service-item-3.jpg" width="300" height="146" alt="Презентация графиков">
             <p class="services-name">Презентации</p>
             <p class="services-content">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button button-yellow" href="#">Заказать</a>
@@ -91,11 +94,11 @@
       </section>
       <article class="features">
         <h2 class="features-header hidden">Преимущества</h2>
-        <div class="features-content">
+        <div class="features-block">
           <p class="features-title">
             Мы — маленькая, но гордая дизайн-студия из Краснодара.
           </p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+          <p class="features-content">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
             покладая
             рук, как роботы.</p>
           <p class="features-offer">Выполняем заказы на разработку:</p>
@@ -106,8 +109,8 @@
           </ul>
         </div>
         <div class="features-table">
-          <img src="img/table-illustration.png" width="360" height="208" alt="Название студии Нёрдс">
-          <table>
+          <img class="features-illustration" src="img/table-illustration.png" width="360" height="208" alt="Название студии Нёрдс">
+          <table class="features-table-content">
             <caption class="table-title">с 2004 года Любим точность во всем:</caption>
             <tr>
               <th class="table-title-cell">146<sup>%</sup></th>
@@ -159,26 +162,28 @@
           <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
           <p class="contacts-content">наб. Реки Карповки,<br>
             5 лит П, Санкт-Петербург<br>
-            <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </p>
-          <a class="button" href="#">Напишите нам</a>
+          <p class="contacts-phone">
+            <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          </p>
+          <a class="button feedback-button" href="#">Напишите нам</a>
         </address>
-        <section class="modal-feedback">
+        <section class="modal-feedback hidden">
           <h2 class="feedback-title">Напишите нам</h2>
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="modal-name">
+            <div class="modal-name">
               <label class="modal-name-title" for="name-input">Ваше имя</label>
               <input class="input-name modal-input" id="name-input" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="modal-email">
+            </div>
+            <div class="modal-email">
               <label class="modal-email-title" for="email-input">Ваш email</label>
               <input class="input-email modal-input" id="email-input" type="email" name="email"
                 placeholder="email@example.com ">
-            </p>
-            <p class="modal-comment">
+            </div>
+            <div class="modal-comment">
               <label class="modal-comment-title" for="comment">Текст письма:</label>
               <textarea class="input-comment modal-input" name="comment" id="comment">В свободной форме</textarea>
-            </p>
+            </div>
             <button class="button button-submit" type="submit">Отправить</button>
           </form>
           <button class="modal-close" type="button">Закрыть</button>
@@ -190,9 +195,30 @@
         <section class="footer-social">
           <h2 class="social-title hidden">Социальные сети</h2>
           <ul class="social-list list">
-            <li class="social-list-item"><a class="social-list-link link" href="#">Вконтакте</a></li>
-            <li class="social-list-item"><a class="social-list-link link" href="#">Фейсбук</a></li>
-            <li class="social-list-item"><a class="social-list-link link" href="#">Инстаграм</a></li>
+            <li class="social-list-item">
+              <a class="social-list-link link" href="#">
+                <span class="hidden">Вконтакте</span>
+                <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link link" href="#">
+                <span class="hidden">Фейсбук</span>
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link link" href="#">
+                <span class="hidden">Инстаграм</span>
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
           </ul>
         </section>
         <section class="footer-offer">
