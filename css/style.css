@@ -207,13 +207,10 @@
 }
 
 .site-navigation-link:hover,
-.basket-link:hover {
-  color: var(--basic-red);
-}
-
+.basket-link:hover,
 .site-navigation-link:focus,
 .basket-link:focus {
-  color: var(--basic-black);
+  color: var(--basic-red);
 }
 
 .site-navigation-link:active,
@@ -221,6 +218,10 @@
   color: var(--basic-black-active);
 }
 
+.site-navigation-item.active .site-navigation-link:hover,
+.user-navigation.active .basket-link:hover {
+  color: var(--basic-black);
+}
 .slider-1 {
   background-image: url("../img/slide-1.png");
 }
@@ -472,7 +473,8 @@
 }
 
 .clients {
-  padding: 45px 30px;
+  padding: 35px 0;
+  padding-left: 30px;
   border-top: 2px solid var(--basic-light);
   border-bottom: 2px solid var(--basic-light);
   margin-bottom: 78px;
@@ -487,13 +489,12 @@
 .client-item {
   position: relative;
   margin-right: 100px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.client-item:nth-child(3) {
-  margin-right: 120px;
-}
-
-.client-item:last-child {
+.client-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -508,15 +509,7 @@
   transform: translateY(50%);
 }
 
-.client-item:nth-child(2)::after {
-  right: -44px;
-}
-
-.client-item:nth-child(3)::after {
-  right: -60px;
-}
-
-.client-item:last-child:after {
+.client-item:nth-child(4n):after {
   display: none;
 }
 
@@ -925,7 +918,8 @@
 }
 
 .sorting-link:active path,
-.sorting-link:focus path {
+.sorting-link:focus path,
+.sorting-link.active path {
   opacity: 1;
 }
 
@@ -941,7 +935,8 @@
 }
 
 .sorting-list .sorting-link:active,
-.sorting-list .sorting-link:focus {
+.sorting-list .sorting-link:focus,
+.sorting-list .sorting-link.current {
   color: var(--basic-black);
 }
 
@@ -1142,7 +1137,8 @@
   display: block;
 }
 
-.catalog-list .catalog-item-link {
+
+.catalog-list .catalog-title-link {
   color: var(--basic-black);
   font-size: 18px;
   line-height: 30px;
@@ -1150,11 +1146,11 @@
   text-transform: uppercase;
 }
 
-.catalog-list .catalog-item-link:hover {
+.catalog-list .catalog-title-link:hover {
   color: var(--basic-red);
 }
 
-.catalog-list .catalog-item-link:active {
+.catalog-list .catalog-title-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 

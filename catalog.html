@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body inner-page">
@@ -23,7 +23,7 @@
         <ul class="site-navigation list">
           <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Студия</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Клиенты</a></li>
-          <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Магазин</a></li>
+          <li class="site-navigation-item active"><a class="site-navigation-link link" href="#" tabindex="-1">Магазин</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link link" href="#">Контакты</a></li>
         </ul>
         <div class="user-navigation">
@@ -107,11 +107,11 @@
         <h2 class="sorting-title hidden">Сортировка</h2>
         <p class="sorting-name">Сортировать:</p>
         <ul class="sorting-list list">
-          <li class="sorting-button"><a class="sorting-link link" href="#">По цене</a></li>
+          <li class="sorting-button"><a class="sorting-link link current" href="#">По цене</a></li>
           <li class="sorting-button"><a class="sorting-link link" href="#">По типу</a></li>
           <li class="sorting-button"><a class="sorting-link link" href="#">По названию</a></li>
           <li class="sorting-button-down">
-            <a class="sorting-link link" href="#" aria-label="Кнопка сортировки по возростания">
+            <a class="sorting-link link active" href="#" aria-label="Кнопка сортировки по возростания">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#231F20"/>
                 </svg>
@@ -129,53 +129,53 @@
       <section class="catalog">
         <h2 class="catalog-list-title hidden">Список товаров</h2>
         <ul class="catalog-list list">
-          <li class="catalog-item">
-            <img class="catalog-item-image" src="img/img-sedona.jpg" width="358" height="578" alt="Товар: Sedona">
-            <div class="catalog-item-information">
-              <a class="catalog-item-link link" href="#">Sedona</a>
-              <p class="catalog-item-content">Информационный сайт для&nbsp;туристов</p>
-              <button class="catalog-item-button button" type="button">9 900 ₽</button>
-            </div>
+          <li class="catalog-item" tabindex="0">
+              <img class="catalog-item-image" src="img/img-sedona.jpg" width="358" height="578" alt="Товар: Sedona">
+                <div class="catalog-item-information">
+                  <a class="catalog-title-link link" href="#">Sedona</a>
+                  <p class="catalog-item-content">Информационный сайт для&nbsp;туристов</p>
+                  <button class="catalog-item-button button" type="button" aria-label="Кнопка добавления товара в корзину">9 900 ₽</button>
+                </div>
           </li>
-          <li class="catalog-item">
-            <img class="catalog-item-image" src="img/img-pink.jpg" width="358" height="578" alt="Товар: Pink App">
-            <div class="catalog-item-information">
-              <a class="catalog-item-link link" href="#">Pink App</a>
-              <p class="catalog-item-content">Продуктовый лендинг приложения для iOS и Android</p>
-              <button class="catalog-item-button button" type="button">9 900 ₽</button>
-            </div>
+          <li class="catalog-item" tabindex="0">
+              <img class="catalog-item-image" src="img/img-pink.jpg" width="358" height="578" alt="Товар: Pink App">
+                <div class="catalog-item-information">
+                  <a class="catalog-title-link link" href="#">Pink App</a>
+                  <p class="catalog-item-content">Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="catalog-item-button button" type="button" aria-label="Кнопка добавления товара в корзину">9 900 ₽</button>
+                </div>
           </li>
-          <li class="catalog-item">
-            <img class="catalog-item-image" src="img/img-barbershop.jpg" width="358" height="578" alt="Товар: Barbershop">
-            <div class="catalog-item-information">
-              <a class="catalog-item-link link" href="#">Barbershop</a>
-              <p class="catalog-item-content">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
-              <button class="catalog-item-button button" type="button">9 900 ₽</button>
-            </div>
+          <li class="catalog-item" tabindex="0">
+              <img class="catalog-item-image" src="img/img-barbershop.jpg" width="358" height="578" alt="Товар: Barbershop">
+                <div class="catalog-item-information">
+                  <a class="catalog-title-link link" href="#">Barbershop</a>
+                  <p class="catalog-item-content">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+                  <button class="catalog-item-button button" type="button" aria-label="Кнопка добавления товара в корзину">9 900 ₽</button>
+                </div>
           </li>
-          <li class="catalog-item">
-            <img class="catalog-item-image" src="img/img-mishka.jpg" width="358" height="578" alt="Товар: MISHKA">
-            <div class="catalog-item-information">
-              <a class="catalog-item-link link" href="#">MISHKA</a>
-              <p class="catalog-item-content">Интернет-магазин вязаных&nbsp;игрушек</p>
-              <button class="catalog-item-button button" type="button">9 900 ₽</button>
-            </div>
+          <li class="catalog-item" tabindex="0">
+              <img class="catalog-item-image" src="img/img-mishka.jpg" width="358" height="578" alt="Товар: MISHKA">
+                <div class="catalog-item-information">
+                  <a class="catalog-title-link link" href="#">MISHKA</a>
+                  <p class="catalog-item-content">Интернет-магазин вязаных&nbsp;игрушек</p>
+                  <button class="catalog-item-button button" type="button" aria-label="Кнопка добавления товара в корзину">9 900 ₽</button>
+                </div>
           </li>
-          <li class="catalog-item">
-            <img class="catalog-item-image" src="img/img-aplus.jpg" width="358" height="578" alt="Товар: A Plus">
-            <div class="catalog-item-information">
-              <a class="catalog-item-link link" href="#">A Plus</a>
-              <p class="catalog-item-content">Лендинг курсов повышения квалификации</p>
-              <button class="catalog-item-button button" type="button">9 900 ₽</button>
-            </div>
+          <li class="catalog-item" tabindex="0">
+              <img class="catalog-item-image" src="img/img-aplus.jpg" width="358" height="578" alt="Товар: A Plus">
+                <div class="catalog-item-information">
+                  <a class="catalog-title-link link" href="#">A Plus</a>
+                  <p class="catalog-item-content">Лендинг курсов повышения квалификации</p>
+                  <button class="catalog-item-button button" type="button" aria-label="Кнопка добавления товара в корзину">9 900 ₽</button>
+                </div>
           </li>
-          <li class="catalog-item">
-            <img class="catalog-item-image" src="img/img-kvast.jpg" width="358" height="578" alt="Товар: КВАСТ">
-            <div class="catalog-item-information">
-              <a class="catalog-item-link link" href="#">КВАСТ</a>
-              <p class="catalog-item-content">Промо-сайт производителя крафтового кваса</p>
-              <button class="catalog-item-button button" type="button">9 900 ₽</button>
-            </div>
+          <li class="catalog-item" tabindex="0">
+              <img class="catalog-item-image" src="img/img-kvast.jpg" width="358" height="578" alt="Товар: КВАСТ">
+                <div class="catalog-item-information">
+                  <a class="catalog-title-link link" href="#">КВАСТ</a>
+                  <p class="catalog-item-content">Промо-сайт производителя крафтового кваса</p>
+                  <button class="catalog-item-button button" type="button" aria-label="Кнопка добавления товара в корзину">9 900 ₽</button>
+                </div>
           </li>
         </ul>
         <ul class="breadcrumbs list">
